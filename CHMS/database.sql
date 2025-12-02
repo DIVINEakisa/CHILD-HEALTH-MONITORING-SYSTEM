@@ -79,8 +79,6 @@ CREATE TABLE immunizations (
     INDEX idx_next_due (next_due_date)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Table: mother_health_records
--- Stores health records for mothers (prenatal, postnatal, and general health)
 CREATE TABLE mother_health_records (
     record_id INT AUTO_INCREMENT PRIMARY KEY,
     mother_id INT NOT NULL,
@@ -114,7 +112,7 @@ INSERT INTO users (name, email, phone, role, password) VALUES
 ('Patricia Martinez', 'patricia.martinez@email.com', '+1-555-0203', 'mother', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
 ('Linda Anderson', 'linda.anderson@email.com', '+1-555-0204', 'mother', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
 
--- Insert sample children
+
 INSERT INTO children (mother_id, name, dob, gender) VALUES
 (3, 'Emma Williams', '2024-06-15', 'female'),
 (3, 'Noah Williams', '2022-03-22', 'male'),
@@ -123,7 +121,7 @@ INSERT INTO children (mother_id, name, dob, gender) VALUES
 (5, 'Sophia Martinez', '2024-02-18', 'female'),
 (6, 'Ava Anderson', '2024-05-30', 'female');
 
--- Insert sample health records
+
 INSERT INTO health_records (child_id, weight, height, nutrition_status, vaccinations, doctor_notes, record_date) VALUES
 -- Emma Williams (6 months old)
 (1, 7.2, 0.65, 'Normal', 'BCG, Hepatitis B, DPT-1, Polio-1', 'Healthy growth. Continue breastfeeding.', '2024-07-15'),
