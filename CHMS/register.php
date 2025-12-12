@@ -120,5 +120,11 @@
             }
         });
     </script>
+    
+    <div class="mt-6 text-center pb-8">
+        <a href="home.php" class="text-sm text-gray-600 hover:text-gray-900 transition">
+            ← Back to Home
+        </a>
+    </div>
 </body>
 </html>

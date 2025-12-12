@@ -11,6 +11,11 @@ require_once __DIR__ . '/src/models/Child.php';
 require_once __DIR__ . '/src/models/Alert.php';
 require_once __DIR__ . '/src/models/Immunization.php';
 
+// Redirect to home page if not logged in
+if (!isLoggedIn()) {
+    redirect('/CHMS/home.php');
+}
+
 requireLogin();
 
 $userId = getCurrentUserId();

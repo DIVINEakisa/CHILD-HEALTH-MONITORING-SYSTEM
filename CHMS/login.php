@@ -93,6 +93,12 @@
                 <p class="mt-1"><strong>Doctor:</strong> sarah.johnson@chms.com / password123</p>
                 <p><strong>Mother:</strong> mary.williams@email.com / password123</p>
             </div>
+            
+            <div class="mt-6 text-center">
+                <a href="home.php" class="text-sm text-gray-600 hover:text-gray-900 transition">
+                    ← Back to Home
+                </a>
+            </div>
         </div>
     </div>
 </body>
